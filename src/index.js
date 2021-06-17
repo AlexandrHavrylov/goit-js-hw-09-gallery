@@ -8,26 +8,9 @@ const modalImage = document.querySelector('.lightbox__image')
 
 // Создаем разметку
 
-const createImg = pictures.map(({preview, original,description}, index) => {
-  return `
-    <li class="gallery__item">
-  <a
-    class="gallery__link"
-    href="${preview}"
-  >
-    <img
-      class="gallery__image"
-      src="${preview}"
-      data-source="${original}"
-      alt="${description}"
-      data-index="${index}"
-    />
-  </a>
-</li>`
+import galleryMarkup from './js/markup'
 
-}).join("")
-
-galleryBox.innerHTML = createImg
+galleryBox.innerHTML = galleryMarkup
 
 
 // Открытие модалки по клику
