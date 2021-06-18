@@ -1,3 +1,6 @@
+import styles from './sass/main.scss'
+
+
 import pictures from './js/gallery-data'
 
 const galleryBox = document.querySelector('.js-gallery')
